@@ -1,0 +1,36 @@
+RICHYBEXT LITTLE STAR — MAKE REGISTRATION LIVE
+
+1. Create/open a Supabase project:
+   https://supabase.com/dashboard
+
+2. Supabase > SQL Editor > New query.
+   Paste and RUN all of supabase-schema.sql.
+
+3. Supabase > Storage > New bucket.
+   Name: contestant-photos
+   Set it to Public.
+
+4. Supabase Dashboard > Connect (or Settings > API Keys).
+   Copy the Project URL and Publishable Key.
+
+5. Open script.js and replace:
+   YOUR_SUPABASE_PROJECT_URL
+   YOUR_SUPABASE_PUBLISHABLE_KEY
+
+6. Upload index.html, style.css and script.js to:
+   https://github.com/Samzeeezzy/richybext-little-star
+
+7. Test the live website:
+   https://samzeeezzy.github.io/richybext-little-star/
+
+8. Test a registration. It should appear in:
+   Supabase > Table Editor > registrations
+   and the photo should appear in:
+   Storage > contestant-photos
+
+IMPORTANT:
+- Put only the Publishable/anon key in browser JavaScript.
+- NEVER put the service_role/secret key in script.js.
+- Guardian details are not publicly selectable.
+- Entries start as "pending" and should be approved before publication.
+- Real voting/payment should be added separately with server-side verification.

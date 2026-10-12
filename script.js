@@ -1,6 +1,6 @@
 // LIVE REGISTRATION: replace these two values with your Supabase project details.
-const SUPABASE_URL = "YOUR_SUPABASE_PROJECT_URL";
-const SUPABASE_PUBLISHABLE_KEY = "YOUR_SUPABASE_PUBLISHABLE_KEY";
+const SUPABASE_URL = "https://gnrnlbnzionwsbhmfsfx.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_cjntSHQxdX5CTMkMn7zLxA_jDrCILai";
 
 const configured = !SUPABASE_URL.startsWith("YOUR_") && !SUPABASE_PUBLISHABLE_KEY.startsWith("YOUR_");
 const db = configured ? window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY) : null;
